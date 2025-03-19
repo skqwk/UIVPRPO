@@ -7,9 +7,12 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    maven{ url "https://jitpack.io" }
 }
 
 dependencies {
+    implementation("com.github.demidko:aot:2025.02.15")
+
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
