@@ -26,6 +26,13 @@ jobs:
       - name: Build with Gradle Wrapper
         run: ./gradlew build
 
+      - name: Run tests and generate coverage report
+        run: ./gradlew test jacocoTestReport
+      - name: Upload coverage to Coveralls
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./gradlew jacocoTestReport coveralls
+
   sonarqube:
     name: SonarQube
     runs-on: ubuntu-latest
