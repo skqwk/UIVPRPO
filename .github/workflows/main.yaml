@@ -26,6 +26,9 @@ jobs:
       - name: Build with Gradle Wrapper
         run: ./gradlew build
 
+      - name: Coveralls
+        uses: coverallsapp/github-action@v2
+
   sonarqube:
     name: SonarQube
     runs-on: ubuntu-latest

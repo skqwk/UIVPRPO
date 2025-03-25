@@ -27,7 +27,6 @@ public class FileWordSet {
         }
     }
 
-
     public FileWordSet(URI file) {
         try {
             this.words = Files.readAllLines(Path.of(file)).stream()
