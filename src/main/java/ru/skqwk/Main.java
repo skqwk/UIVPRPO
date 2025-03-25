@@ -13,13 +13,16 @@ public class Main {
 
         MoodAnalyzer moodAnalyzer = new MoodAnalyzer(positiveSet, negativeSet);
 
-        List<String> positiveText = extractor.extract(mainClassLoader.getResource("texts/positive_text.txt"));
-        System.out.println(moodAnalyzer.analyze(positiveText));
+        String positiveTextFile = "texts/positive_text.txt";
+        List<String> positiveText = extractor.extract(mainClassLoader.getResource(positiveTextFile));
+        System.out.printf("file: %s, result, %s\n", positiveTextFile, moodAnalyzer.analyze(positiveText));
 
-        List<String> neutralText = extractor.extract(mainClassLoader.getResource("texts/neutral_text.txt"));
-        System.out.println(moodAnalyzer.analyze(neutralText));
+        String neutralTextFile = "texts/neutral_text.txt";
+        List<String> neutralText = extractor.extract(mainClassLoader.getResource(neutralTextFile));
+        System.out.printf("file: %s, result, %s\n", neutralTextFile, moodAnalyzer.analyze(neutralText));
 
-        List<String> negativeText = extractor.extract(mainClassLoader.getResource("texts/negative_text.txt"));
-        System.out.println(moodAnalyzer.analyze(negativeText));
+        String negativeTextFile = "texts/negative_text.txt";
+        List<String> negativeText = extractor.extract(mainClassLoader.getResource(negativeTextFile));
+        System.out.printf("file: %s, result, %s\n", negativeTextFile, moodAnalyzer.analyze(negativeText));
     }
 }
