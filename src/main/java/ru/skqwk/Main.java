@@ -3,6 +3,7 @@ package ru.skqwk;
 import java.util.List;
 
 public class Main {
+
     public static void main(String[] args) {
         ClassLoader mainClassLoader = Main.class.getClassLoader();
 
