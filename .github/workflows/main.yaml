@@ -31,7 +31,7 @@ jobs:
       - name: Upload coverage to Coveralls
         env:
           COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: ./gradlew coverallsJacoco
+        run: ./gradlew jacocoTestReport coveralls
 
   sonarqube:
     name: SonarQube
