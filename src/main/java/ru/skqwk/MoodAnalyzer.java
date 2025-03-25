@@ -5,6 +5,7 @@ import com.github.demidko.aot.WordformMeaning;
 import java.util.List;
 
 public class MoodAnalyzer {
+
     private final FileWordSet positiveSet;
     private final FileWordSet negativeSet;
 

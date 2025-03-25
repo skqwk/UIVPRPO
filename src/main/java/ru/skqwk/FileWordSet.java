@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
 import static java.util.function.Predicate.not;
 
 public class FileWordSet {
+
     private final Set<String> words;
 
     public static FileWordSet of(URI uri) {

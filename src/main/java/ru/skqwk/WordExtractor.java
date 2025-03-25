@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class WordExtractor {
+
     List<String> extract(URL path) {
         try {
             return Files.readAllLines(Path.of(path.toURI()))
