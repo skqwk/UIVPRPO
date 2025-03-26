@@ -3,6 +3,7 @@ package ru.skqwk.note;
 import java.util.List;
 
 public interface NoteService {
+
     Note createNote();
 
     void removeNote(String id);

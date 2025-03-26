@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.UUID;
 
 public class NoteServiceImpl implements NoteService {
+
     private final List<Note> notes = new ArrayList<>();
 
     @Override

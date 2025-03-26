@@ -3,6 +3,7 @@ package ru.skqwk.note;
 import java.time.LocalDateTime;
 
 public class Note {
+
     private String id;
     private String name;
     private String content;
